@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "AI Search",
-    "version": "1.0-beta",
+    "version": "1.0.0",
     "description": "Analyze emails with AI",
     "icons": {
         "32": "icons/icon-32.png",
