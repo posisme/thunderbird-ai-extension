@@ -1,0 +1,40 @@
+{
+    "manifest_version": 2,
+    "name": "AI Search",
+    "version": "1.0-beta",
+    "description": "Analyze emails with AI",
+    "icons": {
+        "32": "icons/icon-32.png",
+        "48": "icons/icon-48.png",
+        "128": "icons/icon-128.png"
+    },
+    "permissions": [
+        "messagesRead",
+        "storage",
+        "tabs"
+    ],
+    "message_display_action": {
+        "default_icon": "icons/icon-48.png",
+        "default_title": "AI Search",
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "scripts": [
+            "background.js"
+        ]
+    },
+    "options_ui":{
+        "page":"options/options.html",
+        "open_in_tab":false,
+        "browser_style":true
+    },
+    "web_accessible_resources": [
+        "icons/*"
+    ],
+    "applications": {
+        "gecko": {
+            "id": "glados@posis.me",
+            "strict_min_version": "78.0"
+        }
+    }
+}

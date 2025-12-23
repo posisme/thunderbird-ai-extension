@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Summarize Email</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 10px; width: 400px; }
+  h1 { font-size: 16px; margin: 0 0 8px 0; }
+  #api-key { width: 100%; padding: 5px; margin-bottom: 8px; }
+  #summarize { padding: 5px 10px; margin-bottom: 10px; }
+  #output { white-space: pre-wrap; background: #f9f9f9; border: 1px solid #ddd; padding: 8px; min-height: 80px; }
+  .error { color: #c00; }
+</style>
+<script src="/utils/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <h1>Glados Email</h1>
+  <input type="password" id="api-key" placeholder="OpenAI API Key">
+  
+  <br>
+  <input type="text" id="api-url" placeholder="API URL">
+  <br>
+  <button id="save-key">Save Key</button>
+  <div id="status"></div>
+  
+
+<script src="options.js"></script>
+</body>
+</html>

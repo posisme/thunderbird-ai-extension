@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Summarize Email</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 1em; width: 400px; }
+  h1 { font-size: 16px; margin: 0 0 8px 0; }
+  #search { padding: 5px 10px; margin-bottom: 1rem; }
+  #searchterms { width:100%; margin-bottom:1rem;}
+  #output { white-space: pre-wrap; background: #f9f9f9; border: 1px solid #ddd; padding: 8px; min-height: 80px; max-height:5rem; overflow:scroll}
+  .error { color: #c00; }
+</style>
+<script src="/utils/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <h1>Search Emails</h1>
+  <div id="searchtermsdiv">
+    <label for='searchterms'>Terms</label>
+    <textarea id="searchterms"></textarea>
+  </div>
+  <button id="search">Search</button>
+  <div id="status"></div>
+  <div id="output"></div>
+
+<script src="popup.js"></script>
+</body>
+</html>
